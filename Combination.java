@@ -1,11 +1,11 @@
 public class Combination {
-
-    // Instance variables.
-    // Remove this comment and declare your instance variables here
-
-    // Constructor
+    int first;
+    int second;
+    int third;
     public Combination( int first, int second, int third ) {
-        // Your code here
+        this.first= first;
+        this.second= second;
+        this.third= third;
     }
 
     // An instance method that compares this object
@@ -17,15 +17,17 @@ public class Combination {
     // simply return false.
 
     public boolean equals( Combination other ) {
-        // Put your code here and remove the line below
-        return true;
+        if (other.first==first&&other.second==second&&other.third==third)
+            return true;
+        else 
+            if (other = null)
+                return false;
     }
 
     // Returns a String representation of this Combination.
 
     public String toString() {
-        // Put your code here and remove the line below
-        return "";
+        return first +":"+second+":"+third;
     }
 
 }
