@@ -11,7 +11,9 @@ public class DoorLock {
 
     // Constructor.
     public DoorLock( Combination combination ) {
-        // Your code here
+        this.combination= combination
+        this.isOpen()= isOpen()
+        this.isActivated()= isActivated()
     }
 
     // Access methods.
@@ -32,12 +34,20 @@ public class DoorLock {
 
     public boolean open( Combination combination ) {
 
-        // Put your code here, then remove the line below.
-        return true;
+        if (this.isOpen()&&this.isActivated()&&MAX_NUMBER_OF_ATTEMPTS < 3){
+            open = true;
+            activated = true;
+            return true;
+        open = false;
+        activated= false;
+        return false;
+            
     }
 
     public void activate( Combination c ) {
-        // Put your code here, then remove this comment.
+        if (activated&&combination c)
+            activated = true;
+            MAX_NUMBER_OF_ATTEMPTS = 0;
     }
 
 }
